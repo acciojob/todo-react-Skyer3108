@@ -36,16 +36,27 @@ const App = () => {
           <button onClick={handleBtn}>Add Todo</button>
         </div>
 
+        <ul>
+
         {
       todo.map((val,index)=>(
-        <div className="dis" key={index}>
 
-          <span>{val}</span>
-          <button onClick={()=>handleDel(index)}>Delete</button>
-          
-        </div>
+        <li>
+          <div className="dis" key={index}>
+
+<span>{val}</span>
+<button onClick={()=>handleDel(index)}>Delete</button>
+
+</div>
+
+        </li>
+        
       ))
     }
+
+        </ul>
+
+      
     </div>
 
    
