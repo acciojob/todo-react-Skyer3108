@@ -1,1 +1,12 @@
-
+.dis{
+    display: flex;
+    justify-content: space-around;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.todo{
+    text-align: center;
+}
